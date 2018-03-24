@@ -7,15 +7,22 @@ import css from '../css/style.css';
 import { BrowserRouter, Route, NavLink } from 'react-router-dom';
   
 const root = document.getElementById("root");
+
+function Body() {
+    return (
+    <React.Fragment>
+     <FirstSection/>
+     <SecondSection/>
+    </React.Fragment>
+    )
+}
 ReactDOM.render(
     <BrowserRouter>
-    <React.Fragment>
-      <Main/>
-      <Route path="/" component={FirstSection}/>
-      <Route path="/services" component={FirstSection}/>
-      <FirstSection/>
-      <SecondSection/>
-    </React.Fragment>
+     <React.Fragment>
+       <Main/>
+       <Route path="/" component={Body} exact/>
+       <Route path="/services" component={SecondSection}/>
+     </React.Fragment>
     </BrowserRouter>,
     root
 )

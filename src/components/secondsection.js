@@ -4,8 +4,7 @@ import {ServiceContent,ServicesSections} from './const';
 
 class SecondSection extends React.Component{
     render() {
-        return <section className="sub-section">
-        <Main/>
+        return <section className="sub-section">        
          <div className="title">
              <h1>{ServiceContent.title}</h1>
              <span>{ServiceContent.content}</span>
