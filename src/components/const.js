@@ -37,4 +37,4 @@ export const ServicesSections={
         title:'Modern Design',
         content:'We create Modern And Clean Theme For Your Business Company.'
     }
-}
+};

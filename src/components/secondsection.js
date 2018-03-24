@@ -21,18 +21,18 @@ class SecondSection extends React.Component{
              </div>
              <div className="ser-section">
                  <div className="circle-image">
-                 <img src={ServicesSections.SecondService.imageUrl}/>
+                    <img src={ServicesSections.SecondService.imageUrl}/>
                  </div>
                  <h3>{ServicesSections.SecondService.title}</h3>
                  <span>{ServicesSections.SecondService.content}</span>
-                 </div>
+             </div>
              <div className="ser-section">
                  <div className="circle-image">
-                 <img src={ServicesSections.ThirdService.imageUrl}/>
+                    <img src={ServicesSections.ThirdService.imageUrl}/>
                  </div>
                  <h3>{ServicesSections.ThirdService.title}</h3>
                  <span>{ServicesSections.ThirdService.content}</span>
-                   </div>
+             </div>
          </div>
     </section>;
       }

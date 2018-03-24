@@ -9,12 +9,12 @@ import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 const root = document.getElementById("root");
 ReactDOM.render(
     <BrowserRouter>
-<React.Fragment>
-    <Main/>
-    <Route path="/home" component={FirstSection}/>
-    <Route path="/services" component={FirstSection}/>
-    <FirstSection/>
-    <SecondSection/>
+    <React.Fragment>
+      <Main/>
+      <Route path="/" component={FirstSection}/>
+      <Route path="/services" component={FirstSection}/>
+      <FirstSection/>
+      <SecondSection/>
     </React.Fragment>
     </BrowserRouter>,
     root

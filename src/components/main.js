@@ -10,10 +10,10 @@ class Main extends React.Component{
         <NavLink to="/" className="link" activeClassName="active">{ListItems.home}</NavLink>
         <NavLink to="/services" className="link" activeClassName="active">{ListItems.services}</NavLink>
         <NavLink to="/portfolio" className="link" activeClassName="active">{ListItems.portfolio}</NavLink>
-        <NavLink to="/services" className="link" activeClassName="active">{ListItems.about}</NavLink>
-        <NavLink to="/services" className="link" activeClassName="active">{ListItems.clients}</NavLink>
-        <NavLink to="/services" className="link" activeClassName="active">{ListItems.price}</NavLink>
-        <NavLink to="/services" className="link" activeClassName="active">{ListItems.contact}</NavLink>
+        <NavLink to="/about" className="link" activeClassName="active">{ListItems.about}</NavLink>
+        <NavLink to="/clients" className="link" activeClassName="active">{ListItems.clients}</NavLink>
+        <NavLink to="/price" className="link" activeClassName="active">{ListItems.price}</NavLink>
+        <NavLink to="/contact" className="link" activeClassName="active">{ListItems.contact}</NavLink>
      </nav>
         </header>;
       }
