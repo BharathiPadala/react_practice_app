@@ -1,49 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Main from './main';
+import {ServiceContent,ServicesSections} from './const';
 
 class SecondSection extends React.Component{
     render() {
-        return <section class="sub-section">
-        <div class="header">
-         <figure>
-                 <img class="logo" src="src/images/logo.png"/>
-         </figure>
-         <nav>
-                 <a href="">HOME</a>
-                 <a href="">SERVICES</a>
-                 <a href="">PORTFOLIO</a>
-                 <a href="">ABOUT</a>
-                 <a href="">CLIENTS</a>
-                 <a href="">PRICE</a>
-                 <a href="">CONTACT</a>
-            </nav>
-         </div>
-         <div class="title">
-             <h1>What We Do?</h1>
-             <span>Duis mollis placerat qam,eget laoreet tellus tempor eu.Quisque dapibus in purus in dignissim.</span>
+        return <section className="sub-section">
+        <Main/>
+         <div className="title">
+             <h1>{ServiceContent.title}</h1>
+             <span>{ServiceContent.content}</span>
              <hr/>
          </div>
-         <div class="services">
-             <div class="ser-section">
-                 <div class="circle-image">
-                     <img src="src/images/Service1.png"/>
+         <div className="services">
+             <div className="ser-section">
+                 <div className="circle-image">
+                     <img src={ServicesSections.FirstService.imageUrl}/>
                  </div>
-                 <h3>Modern Design</h3>
-                 <span>We create Modern And Clean Theme For Your Business Company.</span>
+                 <h3>{ServicesSections.FirstService.title}</h3>
+                 <span>{ServicesSections.FirstService.content}</span>
              </div>
-             <div class="ser-section">
-                 <div class="circle-image">
-                     <img src="src/images/Service2.png"/>
+             <div className="ser-section">
+                 <div className="circle-image">
+                 <img src={ServicesSections.SecondService.imageUrl}/>
                  </div>
-                 <h3>Modern Design</h3>
-                     <span>We create Modern And Powerful Theme With Lots Animation And Features.</span>
+                 <h3>{ServicesSections.SecondService.title}</h3>
+                 <span>{ServicesSections.SecondService.content}</span>
                  </div>
-             <div class="ser-section">
-                 <div class="circle-image">
-                     <img src="src/images/Service3.png"/>
+             <div className="ser-section">
+                 <div className="circle-image">
+                 <img src={ServicesSections.ThirdService.imageUrl}/>
                  </div>
-                 <h3>Modern Design</h3>
-                             <span>We create Modern And Powerful Html5 And CSS3 Codde Easy For Read And Customize.</span>
-                         </div>
+                 <h3>{ServicesSections.ThirdService.title}</h3>
+                 <span>{ServicesSections.ThirdService.content}</span>
+                   </div>
          </div>
     </section>;
       }
